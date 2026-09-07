@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nika_react_address/static/css/main.0051eff9.css",
+    "main.js": "/nika_react_address/static/js/main.5712cbb3.js",
+    "static/js/453.605beedb.chunk.js": "/nika_react_address/static/js/453.605beedb.chunk.js",
+    "static/media/spider.png": "/nika_react_address/static/media/spider.029976989cce7b7a060b.png",
+    "static/media/big.png": "/nika_react_address/static/media/big.a11ad49637d7a93f04da.png",
+    "static/media/bus.png": "/nika_react_address/static/media/bus.1a616bc51ef477a962f8.png",
+    "static/media/lock.png": "/nika_react_address/static/media/lock.b4aa00b3c73dd3d15545.png",
+    "static/media/car.png": "/nika_react_address/static/media/car.88512e3f35d99e43599e.png",
+    "static/media/done.png": "/nika_react_address/static/media/done.e5da0e58e10b4253bbdf.png",
+    "static/media/truck.png": "/nika_react_address/static/media/truck.a760ed3ff9182b4594bd.png",
+    "static/media/sirene.png": "/nika_react_address/static/media/sirene.dc5e5971e76fdc557c40.png",
+    "index.html": "/nika_react_address/index.html",
+    "main.0051eff9.css.map": "/nika_react_address/static/css/main.0051eff9.css.map",
+    "main.5712cbb3.js.map": "/nika_react_address/static/js/main.5712cbb3.js.map",
+    "453.605beedb.chunk.js.map": "/nika_react_address/static/js/453.605beedb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0051eff9.css",
+    "static/js/main.5712cbb3.js"
+  ]
+}
