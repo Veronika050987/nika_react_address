@@ -4,7 +4,7 @@
     width: 100%;
     max-width: min(600px, 95vw); 
     width: 100%; /* Занимает всю ширину экрана на мобильных */
-    max-height: 90vh;
+    /* max-height: 90vh; */
     display: flex;
     flex-direction: column;
     box-sizing: border-box; /* Чтобы padding не раздувал контейнер */
@@ -76,18 +76,87 @@
     color: white;
     border: none;
     padding: 15px;
-    margin: 10px;
+    margin: 8px;
     border-radius: 8px;
     cursor: pointer;
-    flex: 1;
     font-weight: bold;
+    flex: 1 1 calc(33.333% - 16px); /* Позволяет кнопкам занимать равную ширину */
+    min-width: 140px;
+     /* Выравнивание контента внутри кнопки */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Улучшение UX на мобильных устройствах */
+    font-size: 14px; /* Оптимальный размер шрифта для мобильных, чтобы не зумило */
+    -webkit-tap-highlight-color: transparent; /* Убирает синюю подсветку при тапе на iOS */
+    user-select: none; /* Запрещает случайное выделение текста при быстрых кликах */
+    touch-action: manipulation; /* Убирает задержку клика на мобильных */
+  
+    transition: background-color 0.2s ease, transform 0.1s ease;
   }
+    /* Эффект при нажатии на телефоне (вместо :hover, который плохо работает на тач-скринах) */
+    .gameBtn:active {
+      background-color: #7f8c8d;
+      transform: scale(0.98); /* Легкий визуальный отклик на нажатие */
+    }
+    .gameBtn2 {
+  background-color: #8fa1a4; 
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 15px;
+  
+  /* Базовые размеры для десктопа */
+  flex: 1; /* Карточки будут делить доступное место поровну */
+  min-height: 110px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+  cursor: pointer;
+  /* Мобильная оптимизация тачей */
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.gameBtn2:active {
+  background-color: #798a8d;
+  transform: scale(0.97);
+}
   .btnGroup 
   {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap; /* Позволяет кнопкам вставать друг под друга на узких экранах */
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
+  .btnGroup2 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: stretch; /* Растягивает карточки по высоте самого длинного текста */
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.gameBtn2 code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #7FFFD4;
+  margin-bottom: 6px;
+  display: block;
+}
   .input 
   {
     width: 80%;
@@ -162,4 +231,26 @@
     align-items: center;
     font-weight: bold;
     border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .btnGroup {
+    flex-direction: column; /* Карточки встают строго друг под друга */
+    align-items: center;
+    padding: 0 10px; /* Отступы от краев экрана телефона */
+  }
+    .btnGroup2 {
+    flex-direction: column; /* Карточки встают строго друг под друга */
+    align-items: center;
+    padding: 0 10px; /* Отступы от краев экрана телефона */
+  }
+
+  .gameBtn {
+    width: 100%; /* Карточка занимает всю ширину контейнера */
+    max-width: 320px; /* Чтобы карточки не были слишком гигантскими вширь */
+  }
+    .gameBtn2 {
+    width: 100%; /* Карточка занимает всю ширину контейнера */
+    max-width: 320px; /* Чтобы карточки не были слишком гигантскими вширь */
+  }
 }

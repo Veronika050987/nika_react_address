@@ -158,7 +158,7 @@ const checkLevel1 = () => {
 <div style={{ display: 'flex', alignItems: 'center', gap: '20px', textAlign: 'left', maxWidth: '600px', margin: '15px auto' }}> 
     <img src={spider} width={110} height={110} alt='spider' loading="lazy" style={{ flexShrink: 0 }} />
     <div>
-        <strong>Детектив Вебка:</strong> 
+        <strong>Детектив Вебка: </strong> 
         "Чтобы мошенники не узнали адрес друга Сшарпика, мы должны спрятать его в сейф внутри класса!
         В ООП таким сейфом является <strong style={{color: '#FF0000'}}>инкапсуляция</strong>! 
         Какое ключевое слово в C# сделает адрес <strong style={{color: '#FF0000'}}>
@@ -237,7 +237,7 @@ const checkLevel1 = () => {
       <img src={spider} width={110} height={110} alt='spider' loading="lazy" style={{ flexShrink: 0 }} />
       <div> 
         <strong>Вебка:</strong> "Нам нужно нарисовать на карте <strong>Академическую площадь</strong>! 
-        В C# существует <strong style={{color: '#FF0000'}}>перегрузка методов</strong>. <strong style={{color: '#FF0000'}}>Метод </strong>называется одинаково <code style={{color: '#FF0000'}}>DrawShape()</code>, но рисует разные фигуры! Дашь ему 1 число - он сделает круг, дашь 2 числа - прямоугольник, а дашь 3 числа - треугольник!"
+        В C# существует <strong style={{color: '#FF0000'}}>перегрузка методов</strong>. <strong style={{color: '#FF0000'}}>Метод </strong>называется одинаково <code style={{color: '#8B008B'}}>DrawShape()</code>, но рисует разные фигуры! Дашь ему 1 число - он сделает круг, дашь 2 числа - прямоугольник, а дашь 3 числа - треугольник!"
       </div>
     </div>
     
@@ -245,14 +245,14 @@ const checkLevel1 = () => {
       Вспомни, как выглядит Академическая площадь, и выбери правильный метод для Сшарпика:
     </p>
     
-    <div className='btnGroup' style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', margin: '15px 0' }}>
-      <button className='gameBtn' onClick={() => selectPolymorphism('circle')}>
+    <div className='btnGroup2' style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', margin: '15px 0' }}>
+      <button className='gameBtn2' onClick={() => selectPolymorphism('circle')}>
         <code>DrawShape(int radius)</code> <br/> Круглая площадь (1 число)
       </button>
-      <button className='gameBtn' onClick={() => selectPolymorphism('rect')}>
+      <button className='gameBtn2' onClick={() => selectPolymorphism('rect')}>
         <code>DrawShape(int w, int h)</code> <br/> Перекрёсток (2 числа)
       </button>
-      <button className='gameBtn' onClick={() => selectPolymorphism('triangle')}>
+      <button className='gameBtn2' onClick={() => selectPolymorphism('triangle')}>
         <code>DrawShape(int a, int b, int c)</code> <br/> Треугольник (3 числа)
       </button>
     </div>
